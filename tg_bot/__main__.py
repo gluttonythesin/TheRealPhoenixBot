@@ -19,12 +19,12 @@ from tg_bot.modules.helper_funcs.chat_status import is_user_admin
 from tg_bot.modules.helper_funcs.misc import paginate_modules
 
 PM_START_TEXT = """
-Hi {}, my name is {}!
+Hi {}, my name is kakuja!
 
 You can find the list of available commands with /help.
 """
 
-BOT_IMAGE = "https://telegra.ph/file/93612a540608640355f20.mp4"
+BOT_IMAGE = "https://telegra.ph/file/e7bedf28431c1b9dbce1a.jpg"
 
 HELP_STRINGS = """
 Hey there! My name is *{}*.
@@ -33,11 +33,11 @@ the things I can help you with.
 If you have any questions on how to use me, head over to @PhoenixSupport
 
 *Main* commands available:
- - /start: start the bot
- - /help: PM's you this message.
- - /help <module name>: PM's you info about that module.
- - /donate: information about how to donate!
- - /settings:
+ - !start: start the bot
+ - !help: PM's you this message.
+ - !help <module name>: PM's you info about that module.
+ - !donate: information about how to donate!
+ - !settings:
    - in PM: will send you your settings for all supported modules.
    - in a group: will redirect you to pm, with all that chat's settings.
 
@@ -148,7 +148,7 @@ def start(bot: Bot, update: Update, args: List[str]):
                     [
                         [
                             InlineKeyboardButton(
-                                text="Add Pɧơɛnıх to your group.",
+                                text="Add kakuja to your group.",
                                 url="t.me/{}?startgroup=botstart".format(bot.username),
                             )
                         ]
